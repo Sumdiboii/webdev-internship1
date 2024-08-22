@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.overlay-image1 {
+    position: fixed; /* Positioning the image absolutely within the body */
+    top: 0px; /* Adjust the position as needed */
+    left: 0px; /* Adjust the position as needed */
+    object-fit: contain; /* Cover the entire screen */
+    width: 1500px; /* Adjust the size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 7; /* Ensure it stays on top of the background */
+}
+
+.overlay-image2 {
+    position:fixed ; /* Positioning the image absolutely within the body */
+    top: 245px; /* Adjust the position as needed */
+    left: 1000px; /* Adjust the position as needed */
+    object-fit: contain; /* Cover the entire screen */
+    width: 170px; /* Adjust the size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 6; /* Ensure it stays on top of the background */
+    animation: slide 15s linear infinite; /* Apply animation */
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100vw); /* Start position: off-screen right */
+    }
+    50% {
+        transform: translateX(-100vw); /* End position: off-screen left */
+    }
+    50.1% {
+        transform: translateX(-100vw) scaleX(-1); /* Slightly after the middle, flip */
+    }
+    100% {
+        transform: translateX(100vw) scaleX(-1); /* End position: off-screen right, mirrored */
+    }
+}
+
+.overlay-image3 {
+    position:fixed ; /* Positioning the image absolutely within the body */
+    top: 270px; /* Adjust the position as needed */
+    left: 210px; /* Adjust the position as needed */
+    object-fit: contain; /* Cover the entire screen */
+    width: 120px; /* Adjust the size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 5; /* Ensure it stays on top of the background */
+    filter: brightness(85%); /* Darken the image by reducing brightness to 50% */
+    
+
+}
+
+.overlay-image4 {
+    position:fixed ; /* Positioning the image absolutely within the body */
+    top: 5px; /* Adjust the position as needed */
+    left: 1000px; /* Adjust the position as needed */
+    object-fit: contain; /* Cover the entire screen */
+    width: 40px; /* Adjust the size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 6; /* Ensure it stays on top of the background */
+    animation: fall 12s linear infinite; /* Apply animation */
+
+}
+
+.overlay-image5 {
+    position:fixed ; /* Positioning the image absolutely within the body */
+    top: 5px; /* Adjust the position as needed */
+    left: 200px; /* Adjust the position as needed */
+    object-fit: contain; /* Cover the entire screen */
+    width: 42px; /* Adjust the size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 6; /* Ensure it stays on top of the background */
+    animation: fall 12s linear infinite; /* Apply animation */
+
+}
+
+.overlay-image6 {
+    position:fixed ; /* Positioning the image absolutely within the body */
+    top: 5px; /* Adjust the position as needed */
+    left: 400px; /* Adjust the position as needed */
+    object-fit: contain; /* Cover the entire screen */
+    width: 36px; /* Adjust the size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 6; /* Ensure it stays on top of the background */
+    animation: fall 15s linear infinite; /* Apply animation */
+    filter: brightness(80%); /* Darken the image by reducing brightness to 50% */
+
+}
+
+.overlay-image7 {
+    position:fixed ; /* Positioning the image absolutely within the body */
+    top: 5px; /* Adjust the position as needed */
+    left: 750px; /* Adjust the position as needed */
+    object-fit: contain; /* Cover the entire screen */
+    width: 36px; /* Adjust the size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 6; /* Ensure it stays on top of the background */
+    animation: fall 16s linear infinite; /* Apply animation */
+    filter: brightness(80%); /* Darken the image by reducing brightness to 50% */
+
+}
+
+.overlay-image8 {
+    position:fixed ; /* Positioning the image absolutely within the body */
+    top: 5px; /* Adjust the position as needed */
+    left: 225px; /* Adjust the position as needed */
+    object-fit: contain; /* Cover the entire screen */
+    width: 36px; /* Adjust the size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 6; /* Ensure it stays on top of the background */
+    animation: fall 21s linear infinite; /* Apply animation */
+    filter: brightness(80%); /* Darken the image by reducing brightness to 50% */
+
+}
+
+.overlay-image9 {
+    position:fixed ; /* Positioning the image absolutely within the body */
+    top: 5px; /* Adjust the position as needed */
+    left: 920px; /* Adjust the position as needed */
+    object-fit: contain; /* Cover the entire screen */
+    width: 36px; /* Adjust the size as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 6; /* Ensure it stays on top of the background */
+    animation: fall 22s linear infinite; /* Apply animation */
+    filter: brightness(80%); /* Darken the image by reducing brightness to 50% */
+
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(50vh) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.8;
+    }
+}
+
+.login-container {
+    width: 405px;
+    background: rgba(133, 52, 52, 0.75);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(5, 4, 4, 0.5);
+    z-index: 10; /* Ensure it stays on top of the background */
+
+}
+
+.login-form h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #ffb700;
+    text-shadow: 0 10px 20px rgba(5, 4, 4, 0.8);
+
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #000000;
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 10px 20px rgba(5, 4, 4, 0.2);
+}
+
+.input-box input::placeholder {
+    color: #793434;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    width: 100%;
+    background-color: #822c2c;
+    color: #ffcc00;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 20px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 10px 20px rgba(5, 4, 4, 0.3);
+
+}
+
+.buttons button:hover {
+    background-color: #9d2b2b;
+    color: #fefefe;
+}
+
+.buttons a {
+    color: #ffb700; 
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.2s ease-in-out;
+    text-shadow: 0 10px 20px rgba(5, 4, 4, 0.8);
+
+}
+
+.buttons a:hover {
+    text-decoration: underline;
+}
